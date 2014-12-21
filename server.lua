@@ -8,7 +8,7 @@ local path = ".ByteBank-Server"
 local public_key = "Keystone"
 
 --# Make sure that the source folder exists
-if not exists( path ) then
+if not fs.exists( path ) then
     fs.makeDir( path )
     local directories = {
         "APIs", "Scripts";
@@ -20,7 +20,7 @@ if not exists( path ) then
 end
 
 --# Load the APIs
-for _, name in ipairs( fs.list( path .. "/APIs/" ) do
+for _, name in ipairs( fs.list( path .. "/APIs/" ) ) do
     os.loadAPI( path .. "/APIs/" .. name )
 end
 
