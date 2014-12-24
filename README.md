@@ -6,7 +6,7 @@ A project created for the Keystone server
 
 Developers
 ============
-Kevin Nilsson
+[TheOddByte](http://theoddbyte.github.io/)
 
 Michael Pearce
 
