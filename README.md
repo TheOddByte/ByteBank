@@ -6,8 +6,8 @@ A project created for the Keystone server
 
 Developers
 ============
-[TheOddByte](http://theoddbyte.github.io/)
+- [TheOddByte](http://theoddbyte.github.io/) GMT+1
 
-Michael Pearce
+- Michael Pearce
 
-[RainbowDashDC](https://rainbowdashdc.github.io/)
+- [RainbowDashDC](https://rainbowdashdc.github.io/)
