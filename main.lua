@@ -1,10 +1,10 @@
 --[[
-    [Program] ByteBank Server
+    [Program] ByteBank Client
     @version 1.0, 2014-12-21
     @author TheOddByte
 --]]
 
-local path = ".ByteBank-Server"
+local path = ".ByteBank-Client"
 local public_key = "Keystone"
 
 --# Make sure that the source folder exists
@@ -29,9 +29,9 @@ local SNet = dofile( path .. "/Scripts/SNet" )
 
 
 local function main()
-    local server = SNet.host( "ByteBank", "server", public_key )
+    local server = SNet.connect( "ByteBank", "server", public_key )
     if not server then
-        error( "Failed to host server", 0 )
+        error( "Failed to connect to server", 0 )
     end
     while true do
         local e = { os.pullEvent() }
